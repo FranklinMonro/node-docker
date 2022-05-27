@@ -11,12 +11,12 @@ services:
         NODE_ENV: stage
     environment:
       - NODE_ENV=stage
-      - MONGO_USER=${MONGO_USER}
-      - MONGO_PASSWORD=${MONGO_PASSWORD}
-      - SESSION_SECRET=${SESSION_SECRET}
+      - MONGO_USER=franco
+      - MONGO_PASSWORD=mypassword
+      - SESSION_SECRET=keyboard_cat
     command: node index.js
 
   mongo:
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
-      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - MONGO_INITDB_ROOT_USERNAME=franco
+      - MONGO_INITDB_ROOT_PASSWORD=mypassword
