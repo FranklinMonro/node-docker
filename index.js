@@ -58,7 +58,7 @@ redisClient.on('connect', function (err) {
 });
 
 app.get('/', (req, res) => {
-    res.send('Hi to node-docker');
+    res.send('Hi to node-docker!!!');
     console.log('check if Nginx is working properly', new Date().getTime());
 });
 
